@@ -22,6 +22,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "SI-KSP Mobile"
+rootProject.name = "MNR-Martabak"
 include(":app")
- 

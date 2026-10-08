@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/martabak_krem"
+    android:fitsSystemWindows="true"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <ImageView
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:contentDescription="@string/judul_snack"
+        android:scaleType="centerCrop"
+        android:src="@drawable/martabak" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/jakarta_bold"
+        android:text="@string/app_name"
+        android:textColor="@color/martabak_coklat"
+        android:textSize="30sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/jakarta_regular"
+        android:text="@string/subjudul_app"
+        android:textColor="@color/teks_abu"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/btnMyProject"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/martabak_oranye"
+        android:fontFamily="@font/jakarta_bold"
+        android:text="@string/btn_my_project"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btnPertemuan3"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/martabak_coklat"
+        android:fontFamily="@font/jakarta_bold"
+        android:text="@string/btn_pertemuan_3"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+</LinearLayout>

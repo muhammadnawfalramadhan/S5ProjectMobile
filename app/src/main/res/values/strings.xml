@@ -1,3 +1,27 @@
 <resources>
-    <string name="app_name">SI-KSP Mobile</string>
+    <string name="app_name">MNR-Martabak</string>
+    <string name="subjudul_app">Project Snack — Muhammad Nawfal Ramadhan</string>
+    <string name="btn_my_project">My Project</string>
+    <string name="btn_pertemuan_3">Latihan Pertemuan 3</string>
+
+    <string name="judul_snack">Martabak Manis</string>
+    <string name="subjudul_snack">Terang Bulan · Kue Bandung</string>
+    <string name="deskripsi_snack">Martabak manis adalah kue dadar tebal khas Indonesia yang dimasak di atas loyang besi. Adonannya dibuat dari tepung terigu, telur, gula, dan ragi sehingga teksturnya berongga dan lembut. Setelah matang, martabak diolesi mentega, diberi topping seperti cokelat meses, keju, kacang, atau susu kental manis, lalu dilipat dua.</string>
+
+    <string name="judul_gizi">Komposisi Gizi</string>
+    <string name="porsi_gizi">Perkiraan per 1 potong (± 75 gram)</string>
+    <string name="gizi_energi">Energi</string>
+    <string name="gizi_energi_nilai">± 230 kkal</string>
+    <string name="gizi_karbo">Karbohidrat</string>
+    <string name="gizi_karbo_nilai">± 33 g</string>
+    <string name="gizi_gula">Gula</string>
+    <string name="gizi_gula_nilai">± 15 g</string>
+    <string name="gizi_lemak">Lemak</string>
+    <string name="gizi_lemak_nilai">± 9 g</string>
+    <string name="gizi_protein">Protein</string>
+    <string name="gizi_protein_nilai">± 5 g</string>
+    <string name="gizi_serat">Serat</string>
+    <string name="gizi_serat_nilai">± 1 g</string>
+    <string name="gizi_natrium">Natrium</string>
+    <string name="gizi_natrium_nilai">± 180 mg</string>
 </resources>

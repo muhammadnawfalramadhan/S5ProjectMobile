@@ -1,4 +1,4 @@
-package com.nawfal.siksp
+package com.nawfal.mnr_martabak
 
 import org.junit.Test
 
