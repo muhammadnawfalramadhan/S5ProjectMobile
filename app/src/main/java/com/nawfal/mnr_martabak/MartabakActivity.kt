@@ -12,5 +12,14 @@ class MartabakActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMartabakBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        setSupportActionBar(binding.toolbar)
+        supportActionBar?.title = getString(R.string.btn_my_project)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        finish()
+        return true
     }
 }

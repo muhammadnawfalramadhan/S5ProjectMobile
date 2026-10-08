@@ -17,28 +17,17 @@
         app:titleTextAppearance="@style/ToolbarTitle"
         app:titleTextColor="@color/siksp_teks" />
 
-    <LinearLayout
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/progressWeb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        app:indicatorColor="@color/siksp_hijau" />
+
+    <WebView
+        android:id="@+id/webView"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
-        android:gravity="center"
-        android:orientation="vertical"
-        android:padding="24dp">
+        android:layout_weight="1" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="✅"
-            android:textSize="64sp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:fontFamily="@font/jakarta_bold"
-            android:gravity="center"
-            android:text="Kode berhasil dikirim!\nSilahkan periksa nomor Anda"
-            android:textColor="@color/siksp_teks"
-            android:textSize="20sp" />
-    </LinearLayout>
 </LinearLayout>

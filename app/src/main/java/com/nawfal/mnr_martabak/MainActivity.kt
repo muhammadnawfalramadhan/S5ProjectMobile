@@ -24,5 +24,9 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, ThirdActivity::class.java)
             startActivity(intent)
         }
+        binding.btnWeb.setOnClickListener {
+            val intent = Intent(this, WebActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

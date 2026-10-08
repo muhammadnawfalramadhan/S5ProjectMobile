@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.nawfal.mnr_martabak.R
 import com.nawfal.mnr_martabak.databinding.ActivityThirdBinding
 
 class ThirdActivity : AppCompatActivity() {
@@ -15,6 +16,10 @@ class ThirdActivity : AppCompatActivity() {
         binding = ActivityThirdBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        setSupportActionBar(binding.toolbar)
+        supportActionBar?.title = getString(R.string.judul_third)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
         binding.btnKirim.setOnClickListener {
             val noTujuan = binding.inputNoTujuan.text.toString()
             Toast.makeText(this, "Kode dikirim ke $noTujuan", Toast.LENGTH_SHORT).show()
@@ -22,5 +27,10 @@ class ThirdActivity : AppCompatActivity() {
             val intent = Intent(this, ThirdResultActivity::class.java)
             startActivity(intent)
         }
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        finish()
+        return true
     }
 }

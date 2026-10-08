@@ -1,40 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
-    android:padding="24dp"
-    android:fitsSystemWindows="true">
+    android:background="@color/siksp_bg"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Verifikasi Nomor"
-        android:textSize="24sp"
-        android:textStyle="bold" />
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/siksp_bg"
+        app:navigationIconTint="@color/siksp_teks"
+        app:titleTextAppearance="@style/ToolbarTitle"
+        app:titleTextColor="@color/siksp_teks" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:gravity="center"
-        android:text="Masukkan nomor HP untuk menerima kode verifikasi" />
+        android:orientation="vertical"
+        android:padding="24dp">
 
-    <EditText
-        android:id="@+id/inputNoTujuan"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:hint="Contoh: 081234567890"
-        android:inputType="phone" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/jakarta_bold"
+            android:text="Verifikasi Nomor"
+            android:textColor="@color/siksp_teks"
+            android:textSize="24sp" />
 
-    <Button
-        android:id="@+id/btnKirim"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Kirim" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/jakarta_regular"
+            android:gravity="center"
+            android:text="Masukkan nomor HP untuk menerima kode verifikasi"
+            android:textColor="@color/siksp_teks_abu" />
 
+        <EditText
+            android:id="@+id/inputNoTujuan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/jakarta_regular"
+            android:hint="Contoh: 081234567890"
+            android:inputType="phone"
+            android:textColor="@color/siksp_teks"
+            android:textColorHint="@color/siksp_teks_abu" />
+
+        <Button
+            android:id="@+id/btnKirim"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/jakarta_bold"
+            android:text="Kirim"
+            android:textColor="@android:color/white"
+            app:backgroundTint="@color/siksp_hijau"
+            app:cornerRadius="14dp" />
+    </LinearLayout>
 </LinearLayout>
