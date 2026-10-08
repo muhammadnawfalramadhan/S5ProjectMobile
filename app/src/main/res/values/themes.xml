@@ -1,9 +1,21 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.MNRMartabak" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
+    <style name="Base.Theme.MNRMartabak" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="colorPrimary">@color/siksp_hijau</item>
+        <item name="colorOnPrimary">@android:color/white</item>
+        <item name="colorSecondary">@color/siksp_biru</item>
+        <item name="android:windowBackground">@color/siksp_bg</item>
+        <item name="android:statusBarColor">@color/siksp_bg</item>
+        <item name="android:navigationBarColor">@color/siksp_bg</item>
+        <item name="android:windowLightStatusBar">false</item>
     </style>
 
     <style name="Theme.MNRMartabak" parent="Base.Theme.MNRMartabak" />
+
+    <!-- Gaya judul Toolbar (dipakai di tahap B2) -->
+    <style name="ToolbarTitle" parent="TextAppearance.Material3.TitleLarge">
+        <item name="fontFamily">@font/jakarta_bold</item>
+        <item name="android:fontFamily">@font/jakarta_bold</item>
+        <item name="android:textSize">18sp</item>
+    </style>
 </resources>

@@ -1,5 +1,11 @@
 <resources>
-    <string name="app_name">MNR-Martabak</string>
+    <string name="app_name">SI-KSP Mobile</string>
+    <string name="judul_app_1">SI-KSP</string>
+    <string name="judul_app_2">Mobile</string>
+    <string name="tagline_app">TUMBUH BERSAMA KOPERASI</string>
+    <string name="deskripsi_app">Koperasi Simpan Pinjam Afdeling 2 PT BSP</string>
+    <string name="identitas">Muhammad Nawfal Ramadhan · 2455301229</string>
+    <string name="btn_web">Info Koperasi (Web)</string>
     <string name="subjudul_app">Project Snack — Muhammad Nawfal Ramadhan</string>
     <string name="btn_my_project">My Project</string>
     <string name="btn_pertemuan_3">Latihan Pertemuan 3</string>

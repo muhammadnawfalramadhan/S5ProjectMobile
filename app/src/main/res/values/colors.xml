@@ -7,4 +7,15 @@
     <color name="martabak_krem">#FFF4E3</color>
     <color name="teks_gelap">#2B2118</color>
     <color name="teks_abu">#7A6A5A</color>
+
+    <!-- Palet SI-KSP Mobile (grand design) -->
+    <color name="siksp_bg">#0B1220</color>
+    <color name="siksp_card">#131C2E</color>
+    <color name="siksp_garis">#24314F</color>
+    <color name="siksp_hijau">#10B981</color>
+    <color name="siksp_hijau_muda">#34D399</color>
+    <color name="siksp_biru">#3B82F6</color>
+    <color name="siksp_biru_muda">#93C5FD</color>
+    <color name="siksp_teks">#F1F5F9</color>
+    <color name="siksp_teks_abu">#8A97B1</color>
 </resources>

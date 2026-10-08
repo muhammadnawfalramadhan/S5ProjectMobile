@@ -1,59 +1,109 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/martabak_krem"
+    android:background="@color/siksp_bg"
     android:fitsSystemWindows="true"
     android:gravity="center"
     android:orientation="vertical"
     android:padding="24dp">
 
     <ImageView
-        android:layout_width="140dp"
-        android:layout_height="140dp"
-        android:contentDescription="@string/judul_snack"
-        android:scaleType="centerCrop"
-        android:src="@drawable/martabak" />
+        android:layout_width="112dp"
+        android:layout_height="112dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/logo_siksp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/jakarta_bold"
+            android:text="@string/judul_app_1"
+            android:textColor="@color/siksp_teks"
+            android:textSize="32sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/jakarta_bold"
+            android:text="@string/judul_app_2"
+            android:textColor="@color/siksp_hijau_muda"
+            android:textSize="32sp" />
+    </LinearLayout>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="6dp"
         android:fontFamily="@font/jakarta_bold"
-        android:text="@string/app_name"
-        android:textColor="@color/martabak_coklat"
-        android:textSize="30sp" />
+        android:letterSpacing="0.15"
+        android:text="@string/tagline_app"
+        android:textColor="@color/siksp_teks_abu"
+        android:textSize="12sp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         android:fontFamily="@font/jakarta_regular"
-        android:text="@string/subjudul_app"
-        android:textColor="@color/teks_abu"
-        android:textSize="14sp" />
+        android:text="@string/deskripsi_app"
+        android:textColor="@color/siksp_teks_abu"
+        android:textSize="13sp" />
+
+    <Button
+        android:id="@+id/btnWeb"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/jakarta_bold"
+        android:text="@string/btn_web"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        app:backgroundTint="@color/siksp_hijau"
+        app:cornerRadius="14dp" />
 
     <Button
         android:id="@+id/btnMyProject"
-        android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:layout_marginTop="32dp"
-        android:backgroundTint="@color/martabak_oranye"
-        android:fontFamily="@font/jakarta_bold"
-        android:text="@string/btn_my_project"
-        android:textColor="@android:color/white"
-        android:textSize="16sp" />
-
-    <Button
-        android:id="@+id/btnPertemuan3"
+        style="@style/Widget.Material3.Button.OutlinedButton"
         android:layout_width="match_parent"
         android:layout_height="56dp"
         android:layout_marginTop="12dp"
-        android:backgroundTint="@color/martabak_coklat"
+        android:fontFamily="@font/jakarta_bold"
+        android:text="@string/btn_my_project"
+        android:textColor="@color/siksp_hijau_muda"
+        android:textSize="15sp"
+        app:cornerRadius="14dp"
+        app:strokeColor="@color/siksp_hijau" />
+
+    <Button
+        android:id="@+id/btnPertemuan3"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="12dp"
         android:fontFamily="@font/jakarta_bold"
         android:text="@string/btn_pertemuan_3"
-        android:textColor="@android:color/white"
-        android:textSize="16sp" />
+        android:textColor="@color/siksp_biru_muda"
+        android:textSize="15sp"
+        app:cornerRadius="14dp"
+        app:strokeColor="@color/siksp_biru" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/jakarta_regular"
+        android:text="@string/identitas"
+        android:textColor="@color/siksp_teks_abu"
+        android:textSize="12sp" />
 
 </LinearLayout>
