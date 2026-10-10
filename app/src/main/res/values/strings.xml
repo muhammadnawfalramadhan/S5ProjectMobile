@@ -34,4 +34,36 @@
     <string name="gizi_serat_nilai">± 1 g</string>
     <string name="gizi_natrium">Natrium</string>
     <string name="gizi_natrium_nilai">± 180 mg</string>
+    <!-- Pertemuan 6: Splash, Auth, Logout, Profil -->
+    <string name="versi_app">Versi %1$s</string>
+    <string name="splash_footer">Muhammad Nawfal Ramadhan · Politeknik Caltex Riau</string>
+    <string name="judul_login">Masuk ke Akun</string>
+    <string name="subjudul_login">Silakan login untuk melanjutkan</string>
+    <string name="hint_username">Username</string>
+    <string name="hint_password">Password</string>
+    <string name="btn_login">Login</string>
+    <string name="login_gagal">Login Gagal</string>
+    <string name="silahkan_coba_lagi">Silahkan coba lagi</string>
+    <string name="sapaan">Halo, %1$s 👋</string>
+    <string name="btn_logout">Logout</string>
+    <string name="konfirmasi_logout">Apakah kamu yakin ingin logout?</string>
+    <string name="btn_profil">Profil Developer</string>
+
+    <string name="judul_profil">Profil Developer</string>
+    <string name="profil_nama">Muhammad Nawfal Ramadhan</string>
+    <string name="profil_nim">NIM 2455301229</string>
+    <string name="profil_prodi">Teknik Informatika · Politeknik Caltex Riau</string>
+    <string name="profil_label_sosmed">Sosial Media</string>
+    <string name="profil_github_label">GitHub</string>
+    <string name="profil_github">github.com/muhammadnawfalramadhan</string>
+    <string name="profil_instagram_label">Instagram</string>
+    <string name="profil_instagram">\@muhammadnawfalramadhan</string>
+    <string name="profil_email_label">Email</string>
+    <string name="profil_email">nawfal@example.com</string>
+    <string name="profil_label_hobi">Hobi</string>
+    <string name="profil_hobi">Ngoding aplikasi mobile, main game, dan kulineran martabak manis.</string>
+    <string name="profil_label_kekuatan">Kekuatan Terbesar</string>
+    <string name="profil_kekuatan">Pantang menyerah saat debugging — error apa pun dicari sampai ketemu solusinya.</string>
+    <string name="profil_label_skill">Keahlian</string>
+    <string name="profil_skill">Kotlin · Android XML · Jetpack Compose · Laravel · Git</string>
 </resources>
