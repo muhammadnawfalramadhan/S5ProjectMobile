@@ -5,7 +5,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.nawfal.mnr_martabak.databinding.ActivityMainBinding
-import com.nawfal.mnr_martabak.pertemuan_3.ThirdActivity
+import com.nawfal.mnr_martabak.Home.pertemuan_3.ThirdActivity
 
 class MainActivity : AppCompatActivity() {
 

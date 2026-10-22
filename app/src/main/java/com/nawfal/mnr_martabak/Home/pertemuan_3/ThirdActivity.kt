@@ -1,4 +1,4 @@
-package com.nawfal.mnr_martabak.pertemuan_3
+package com.nawfal.mnr_martabak.Home.pertemuan_3
 
 import android.content.Intent
 import android.os.Bundle

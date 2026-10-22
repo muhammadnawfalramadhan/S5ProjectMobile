@@ -14,6 +14,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MNRMartabak">
         <activity
+            android:name=".BaseActivity"
+            android:exported="false" />
+        <activity
             android:name=".SplashScreenActivity"
             android:exported="true">
             <intent-filter>
@@ -34,11 +37,11 @@
             android:name=".ProfileActivity"
             android:exported="false" />
         <activity
-            android:name=".pertemuan_3.ThirdActivity"
+            android:name=".Home.pertemuan_3.ThirdActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".pertemuan_3.ThirdResultActivity"
+            android:name=".Home.pertemuan_3.ThirdResultActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
         <activity
