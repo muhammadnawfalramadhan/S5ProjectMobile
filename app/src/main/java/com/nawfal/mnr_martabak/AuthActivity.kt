@@ -31,9 +31,9 @@ class AuthActivity : AppCompatActivity() {
                 editor.putString("username", username)
                 editor.apply()
 
-                val intent = Intent(this, MainActivity::class.java)
+                val intent = Intent(this, BaseActivity::class.java)
                 startActivity(intent)
-                finish() // agar tombol back dari MainActivity tidak kembali ke halaman login
+                finish() // agar tombol back dari BaseActivity tidak kembali ke halaman login
             } else {
                 AlertDialog.Builder(this)
                     .setTitle(getString(R.string.login_gagal))
