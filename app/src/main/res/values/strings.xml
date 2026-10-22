@@ -48,6 +48,18 @@
     <string name="btn_logout">Logout</string>
     <string name="konfirmasi_logout">Apakah kamu yakin ingin logout?</string>
     <string name="btn_profil">Profil Developer</string>
+    <!-- Pertemuan 7: Bottom Navigation -->
+    <string name="menu_beranda">Beranda</string>
+    <string name="menu_simpanan">Simpanan</string>
+    <string name="menu_pinjaman">Pinjaman</string>
+    <string name="menu_riwayat">Riwayat</string>
+    <string name="menu_profil">Profil</string>
+    <string name="judul_simpanan">Simpanan Anggota</string>
+    <string name="desk_simpanan">Ringkasan simpanan pokok, wajib, dan sukarela akan tampil di sini.</string>
+    <string name="judul_pinjaman">Pinjaman Anggota</string>
+    <string name="desk_pinjaman">Pengajuan pinjaman dan simulasi cicilan akan tampil di sini.</string>
+    <string name="judul_riwayat">Riwayat Transaksi</string>
+    <string name="desk_riwayat">Daftar setoran, penarikan, dan angsuran akan tampil di sini.</string>
 
     <string name="judul_profil">Profil Developer</string>
     <string name="profil_nama">Muhammad Nawfal Ramadhan</string>

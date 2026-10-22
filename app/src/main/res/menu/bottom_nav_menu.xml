@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/home"     android:icon="@drawable/ic_home"     android:title="@string/menu_beranda" />
+    <item android:id="@+id/simpanan" android:icon="@drawable/ic_simpanan" android:title="@string/menu_simpanan" />
+    <item android:id="@+id/pinjaman" android:icon="@drawable/ic_pinjaman" android:title="@string/menu_pinjaman" />
+    <item android:id="@+id/riwayat"  android:icon="@drawable/ic_riwayat"  android:title="@string/menu_riwayat" />
+    <item android:id="@+id/profil"   android:icon="@drawable/ic_profil"   android:title="@string/menu_profil" />
+</menu>
