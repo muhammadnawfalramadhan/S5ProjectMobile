@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/siksp_bg"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <ImageView
+            android:layout_width="88dp"
+            android:layout_height="88dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/logo_siksp" />
+
+        <TextView
+            android:id="@+id/tvJudul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/jakarta_bold"
+            android:gravity="center"
+            android:text="@string/judul_email"
+            android:textColor="@color/siksp_teks"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tvSubjudul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:fontFamily="@font/jakarta_regular"
+            android:gravity="center"
+            android:text="@string/subjudul_email"
+            android:textColor="@color/siksp_teks_abu"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/inputEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:autofillHints="emailAddress"
+            android:fontFamily="@font/jakarta_regular"
+            android:hint="@string/hint_email"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:textColor="@color/siksp_teks"
+            android:textColorHint="@color/siksp_teks_abu" />
+
+        <Button
+            android:id="@+id/btnLanjut"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="28dp"
+            android:fontFamily="@font/jakarta_bold"
+            android:text="@string/btn_lanjut"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            app:backgroundTint="@color/siksp_hijau"
+            app:cornerRadius="14dp" />
+    </LinearLayout>
+</ScrollView>

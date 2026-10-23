@@ -78,4 +78,25 @@
     <string name="profil_kekuatan">Pantang menyerah saat debugging — error apa pun dicari sampai ketemu solusinya.</string>
     <string name="profil_label_skill">Keahlian</string>
     <string name="profil_skill">Kotlin · Android XML · Jetpack Compose · Laravel · Git</string>
+    <!-- Pertemuan 8: Quiz - Register With Gmail -->
+    <string name="btn_register_gmail">Register With Gmail</string>
+    <string name="judul_email">Daftar dengan Gmail</string>
+    <string name="subjudul_email">Masukkan alamat Gmail kamu untuk melanjutkan</string>
+    <string name="hint_email">Email (@gmail.com)</string>
+    <string name="btn_lanjut">Lanjut</string>
+    <string name="judul_registrasi">Registrasi Akun</string>
+    <string name="subjudul_registrasi">Lengkapi data diri kamu</string>
+    <string name="hint_nama">Nama Lengkap</string>
+    <string name="btn_registrasi">Registrasi</string>
+    <string name="email_tidak_valid">Email Tidak Valid</string>
+    <string name="email_kosong">Email tidak boleh kosong</string>
+    <string name="email_bukan_gmail">Email harus menggunakan domain @gmail.com</string>
+    <string name="registrasi_gagal">Registrasi Gagal</string>
+    <string name="semua_wajib_diisi">Semua field wajib diisi</string>
+    <string name="password_min_6">Password minimal 6 karakter</string>
+    <string name="username_tanpa_spasi">Username tidak boleh mengandung spasi</string>
+    <string name="registrasi_berhasil">Registrasi Berhasil</string>
+    <string name="info_registrasi">Akun atas nama %1$s berhasil didaftarkan.\nSilakan login menggunakan username: %2$s</string>
+    <string name="btn_ke_login">Kembali ke Login</string>
+    <string name="username_password_salah">Username atau password salah</string>
 </resources>
