@@ -78,4 +78,13 @@
     <string name="profil_kekuatan">Pantang menyerah saat debugging — error apa pun dicari sampai ketemu solusinya.</string>
     <string name="profil_label_skill">Keahlian</string>
     <string name="profil_skill">Kotlin · Android XML · Jetpack Compose · Laravel · Git</string>
+
+    <!-- Riwayat: DatePicker -->
+    <string name="riwayat_pilih_tanggal">Pilih Tanggal</string>
+    <string name="riwayat_reset">Reset</string>
+    <string name="riwayat_judul_picker">Pilih tanggal transaksi</string>
+    <string name="riwayat_semua">Menampilkan semua transaksi</string>
+    <string name="riwayat_filter">Transaksi pada %1$s</string>
+    <string name="riwayat_kosong">Tidak ada transaksi pada tanggal ini</string>
+
 </resources>
