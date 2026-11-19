@@ -31,6 +31,7 @@ class SplashScreenActivity : AppCompatActivity() {
             val sharedPref = getSharedPreferences("user_pref", MODE_PRIVATE)
             val isLogin = sharedPref.getBoolean("isLogin", false)
 
+<<<<<<< HEAD
             // Pertemuan 11: user baru (belum pernah lihat onboarding) -> OnboardingActivity
             val appPref = getSharedPreferences(OnboardingActivity.PREF_APP, MODE_PRIVATE)
             val sudahOnboarding = appPref.getBoolean(OnboardingActivity.KEY_ONBOARDING_SELESAI, false)
@@ -41,6 +42,10 @@ class SplashScreenActivity : AppCompatActivity() {
                 isLogin -> BaseActivity::class.java
                 else -> AuthActivity::class.java
             }
+=======
+            // isLogin true -> BaseActivity (Home), false -> AuthActivity
+            val tujuan = if (isLogin) BaseActivity::class.java else AuthActivity::class.java
+>>>>>>> c5cb732a7dd4ea4db5dfcb54b7b25800fb0e7f88
             val intent = Intent(this@SplashScreenActivity, tujuan)
             startActivity(intent)
             finish()

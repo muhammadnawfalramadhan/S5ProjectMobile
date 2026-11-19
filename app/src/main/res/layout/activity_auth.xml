@@ -81,6 +81,20 @@
             app:backgroundTint="@color/siksp_hijau"
             app:cornerRadius="14dp" />
 
+        <!-- Quiz Soal 1: Register With Gmail -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnRegisterGmail"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/jakarta_bold"
+            android:text="@string/btn_register_gmail"
+            android:textColor="@color/siksp_hijau"
+            android:textSize="15sp"
+            app:cornerRadius="14dp"
+            app:strokeColor="@color/siksp_hijau" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

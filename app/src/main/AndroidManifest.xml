@@ -34,6 +34,20 @@
             android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".EmailActivity"
+<<<<<<< HEAD
+=======
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".RegisterSuccessActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+>>>>>>> c5cb732a7dd4ea4db5dfcb54b7b25800fb0e7f88
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
         <activity

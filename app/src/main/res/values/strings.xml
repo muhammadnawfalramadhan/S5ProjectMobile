@@ -99,6 +99,7 @@
     <string name="info_registrasi">Akun atas nama %1$s berhasil didaftarkan.\nSilakan login menggunakan username: %2$s</string>
     <string name="btn_ke_login">Kembali ke Login</string>
     <string name="username_password_salah">Username atau password salah</string>
+<<<<<<< HEAD
 
     <!-- Riwayat: DatePicker -->
     <string name="riwayat_pilih_tanggal">Pilih Tanggal</string>
@@ -145,4 +146,6 @@
     <string name="onboard_desk_2">Ajukan pinjaman ke koperasi dan lihat jadwal angsuran beserta status pembayarannya setiap bulan.</string>
     <string name="onboard_judul_3">Semua Transaksi Tercatat</string>
     <string name="onboard_desk_3">Setoran, penarikan, dan angsuran tersimpan rapi di Riwayat dan bisa difilter berdasarkan tanggal.</string>
+=======
+>>>>>>> c5cb732a7dd4ea4db5dfcb54b7b25800fb0e7f88
 </resources>
