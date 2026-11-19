@@ -14,30 +14,84 @@
         app:titleTextAppearance="@style/ToolbarTitle"
         app:titleTextColor="@color/siksp_teks" />
 
+    <!-- Ringkasan pinjaman aktif -->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/bg_card"
         android:orientation="vertical"
-        android:padding="24dp">
+        android:padding="18dp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/jakarta_bold"
-            android:text="@string/judul_pinjaman"
-            android:textColor="@color/siksp_hijau_muda"
-            android:textSize="22sp" />
+            android:text="@string/pinjaman_aktif"
+            android:textColor="@color/siksp_teks_abu"
+            android:textSize="12sp" />
 
         <TextView
+            android:id="@+id/txtTotalPinjaman"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/jakarta_bold"
+            android:textColor="@color/siksp_teks"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/txtCicilan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
             android:fontFamily="@font/jakarta_regular"
-            android:gravity="center"
-            android:text="@string/desk_pinjaman"
             android:textColor="@color/siksp_teks_abu"
-            android:textSize="14sp" />
+            android:textSize="13sp" />
+
+        <com.google.android.material.progressindicator.LinearProgressIndicator
+            android:id="@+id/progresAngsuran"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            app:indicatorColor="@color/siksp_hijau"
+            app:trackColor="@color/siksp_garis"
+            app:trackCornerRadius="4dp"
+            app:trackThickness="8dp" />
+
+        <TextView
+            android:id="@+id/txtProgres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:fontFamily="@font/jakarta_bold"
+            android:textColor="@color/siksp_hijau_muda"
+            android:textSize="12sp" />
     </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/jakarta_bold"
+        android:text="@string/pinjaman_jadwal"
+        android:textColor="@color/siksp_teks"
+        android:textSize="16sp" />
+
+    <!-- ListView yang diisi oleh CustomAdapter (JadwalAngsuranAdapter) -->
+    <ListView
+        android:id="@+id/lvAngsuran"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="10dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="16dp"
+        android:scrollbarStyle="outsideOverlay" />
 </LinearLayout>

@@ -78,6 +78,27 @@
     <string name="profil_kekuatan">Pantang menyerah saat debugging — error apa pun dicari sampai ketemu solusinya.</string>
     <string name="profil_label_skill">Keahlian</string>
     <string name="profil_skill">Kotlin · Android XML · Jetpack Compose · Laravel · Git</string>
+    <!-- Pertemuan 8: Quiz - Register With Gmail -->
+    <string name="btn_register_gmail">Register With Gmail</string>
+    <string name="judul_email">Daftar dengan Gmail</string>
+    <string name="subjudul_email">Masukkan alamat Gmail kamu untuk melanjutkan</string>
+    <string name="hint_email">Email (@gmail.com)</string>
+    <string name="btn_lanjut">Lanjut</string>
+    <string name="judul_registrasi">Registrasi Akun</string>
+    <string name="subjudul_registrasi">Lengkapi data diri kamu</string>
+    <string name="hint_nama">Nama Lengkap</string>
+    <string name="btn_registrasi">Registrasi</string>
+    <string name="email_tidak_valid">Email Tidak Valid</string>
+    <string name="email_kosong">Email tidak boleh kosong</string>
+    <string name="email_bukan_gmail">Email harus menggunakan domain @gmail.com</string>
+    <string name="registrasi_gagal">Registrasi Gagal</string>
+    <string name="semua_wajib_diisi">Semua field wajib diisi</string>
+    <string name="password_min_6">Password minimal 6 karakter</string>
+    <string name="username_tanpa_spasi">Username tidak boleh mengandung spasi</string>
+    <string name="registrasi_berhasil">Registrasi Berhasil</string>
+    <string name="info_registrasi">Akun atas nama %1$s berhasil didaftarkan.\nSilakan login menggunakan username: %2$s</string>
+    <string name="btn_ke_login">Kembali ke Login</string>
+    <string name="username_password_salah">Username atau password salah</string>
 
     <!-- Riwayat: DatePicker -->
     <string name="riwayat_pilih_tanggal">Pilih Tanggal</string>
@@ -87,4 +108,41 @@
     <string name="riwayat_filter">Transaksi pada %1$s</string>
     <string name="riwayat_kosong">Tidak ada transaksi pada tanggal ini</string>
 
+
+    <!-- Pertemuan 11: Home (Background Drawable + Grid) -->
+    <string name="home_saldo_simpanan">Saldo Simpanan</string>
+    <string name="home_sisa_pinjaman">Sisa Pinjaman</string>
+    <string name="home_menu_layanan">Menu Layanan</string>
+    <string name="home_aktivitas">Aktivitas Terakhir</string>
+    <string name="home_lihat_semua">Lihat Semua</string>
+    <string name="grid_simpanan">Simpanan</string>
+    <string name="grid_pinjaman">Pinjaman</string>
+    <string name="grid_riwayat">Riwayat</string>
+    <string name="grid_profil">Profil</string>
+    <string name="grid_info">Info Web</string>
+    <string name="grid_panduan">Panduan</string>
+    <string name="grid_martabak">Martabak</string>
+    <string name="grid_latihan">Latihan P3</string>
+
+    <!-- Pertemuan 11: Pinjaman (CustomAdapter + ListView) -->
+    <string name="pinjaman_aktif">Pinjaman Aktif</string>
+    <string name="pinjaman_cicilan">Cicilan %1$s / bulan · %2$d bulan</string>
+    <string name="pinjaman_progres">%1$d dari %2$d angsuran lunas</string>
+    <string name="pinjaman_jadwal">Jadwal Angsuran</string>
+    <string name="angsuran_ke">Angsuran ke-%1$d</string>
+    <string name="angsuran_jatuh_tempo">Jatuh tempo %1$s</string>
+    <string name="status_lunas">Lunas</string>
+    <string name="status_belum">Belum Bayar</string>
+    <string name="toast_angsuran">Angsuran ke-%1$d · %2$s · %3$s</string>
+
+    <!-- Pertemuan 11: Onboarding Screen -->
+    <string name="onboard_lewati">Lewati</string>
+    <string name="onboard_lanjut">Lanjut</string>
+    <string name="onboard_mulai">Mulai Sekarang</string>
+    <string name="onboard_judul_1">Simpan Uang Lebih Mudah</string>
+    <string name="onboard_desk_1">Setor simpanan pokok, wajib, dan sukarela, lalu pantau saldomu kapan saja langsung dari HP.</string>
+    <string name="onboard_judul_2">Ajukan Pinjaman Tanpa Ribet</string>
+    <string name="onboard_desk_2">Ajukan pinjaman ke koperasi dan lihat jadwal angsuran beserta status pembayarannya setiap bulan.</string>
+    <string name="onboard_judul_3">Semua Transaksi Tercatat</string>
+    <string name="onboard_desk_3">Setoran, penarikan, dan angsuran tersimpan rapi di Riwayat dan bisa difilter berdasarkan tanggal.</string>
 </resources>

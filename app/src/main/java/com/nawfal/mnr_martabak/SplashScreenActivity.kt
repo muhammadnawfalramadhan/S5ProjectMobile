@@ -6,6 +6,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
 import com.nawfal.mnr_martabak.databinding.ActivitySplashScreenBinding
+import com.nawfal.mnr_martabak.onboarding.OnboardingActivity
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
@@ -30,8 +31,16 @@ class SplashScreenActivity : AppCompatActivity() {
             val sharedPref = getSharedPreferences("user_pref", MODE_PRIVATE)
             val isLogin = sharedPref.getBoolean("isLogin", false)
 
-            // isLogin true -> BaseActivity, false -> AuthActivity
-            val tujuan = if (isLogin) BaseActivity::class.java else AuthActivity::class.java
+            // Pertemuan 11: user baru (belum pernah lihat onboarding) -> OnboardingActivity
+            val appPref = getSharedPreferences(OnboardingActivity.PREF_APP, MODE_PRIVATE)
+            val sudahOnboarding = appPref.getBoolean(OnboardingActivity.KEY_ONBOARDING_SELESAI, false)
+
+            // isLogin true -> BaseActivity (Home), false -> AuthActivity
+            val tujuan = when {
+                !sudahOnboarding -> OnboardingActivity::class.java
+                isLogin -> BaseActivity::class.java
+                else -> AuthActivity::class.java
+            }
             val intent = Intent(this@SplashScreenActivity, tujuan)
             startActivity(intent)
             finish()

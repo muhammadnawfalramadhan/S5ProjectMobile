@@ -19,4 +19,13 @@
     <color name="siksp_teks">#F1F5F9</color>
     <color name="siksp_teks_abu">#8A97B1</color>
     <color name="siksp_merah">#EF4444</color>
+
+    <!-- Pertemuan 11: warna tambahan untuk header Home, onboarding & status angsuran -->
+    <color name="siksp_indigo">#4F46E5</color>
+    <color name="siksp_indigo_gelap">#312E81</color>
+    <color name="siksp_ungu_muda">#C4B5FD</color>
+    <color name="siksp_kuning">#FBBF24</color>
+    <color name="siksp_bg_atas">#111A2E</color>
+    <color name="putih_15">#26FFFFFF</color>
+    <color name="putih_70">#B3FFFFFF</color>
 </resources>

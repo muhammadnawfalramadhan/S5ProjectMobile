@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_onboarding_2"
+    android:paddingStart="32dp"
+    android:paddingTop="24dp"
+    android:paddingEnd="32dp"
+    android:paddingBottom="170dp"
+    tools:context=".onboarding.Onboarding2Fragment">
+
+    <FrameLayout
+        android:id="@+id/frameIkon"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:background="@drawable/bg_onboarding_ikon"
+        app:layout_constraintBottom_toTopOf="@+id/txtJudul"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:importantForAccessibility="no"
+            android:src="@drawable/ic_pinjaman"
+            app:tint="@color/siksp_biru_muda" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/txtJudul"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/jakarta_bold"
+        android:gravity="center"
+        android:text="@string/onboard_judul_2"
+        android:textColor="@color/siksp_teks"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtDeskripsi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameIkon" />
+
+    <TextView
+        android:id="@+id/txtDeskripsi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/jakarta_regular"
+        android:gravity="center"
+        android:lineSpacingExtra="4dp"
+        android:text="@string/onboard_desk_2"
+        android:textColor="@color/siksp_teks_abu"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtJudul" />
+</androidx.constraintlayout.widget.ConstraintLayout>

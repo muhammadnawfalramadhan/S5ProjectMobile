@@ -26,9 +26,23 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".onboarding.OnboardingActivity"
+            android:exported="false" />
+        <activity
             android:name=".AuthActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".EmailActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".RegisterSuccessActivity"
+            android:exported="false" />
         <activity
             android:name=".Home.pertemuan_3.ThirdActivity"
             android:exported="false"

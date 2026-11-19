@@ -36,6 +36,12 @@ class BaseActivity : AppCompatActivity() {
         }
     }
 
+    // Dipanggil dari HomeFragment (grid menu) untuk pindah tab.
+    // Mengubah selectedItemId otomatis memicu setOnItemSelectedListener di atas.
+    fun bukaTab(itemId: Int) {
+        binding.bottomNavView.selectedItemId = itemId
+    }
+
     private fun replaceFragment(fragment: Fragment) {
         supportFragmentManager.beginTransaction()
             .replace(binding.fragmentContainer.id, fragment)

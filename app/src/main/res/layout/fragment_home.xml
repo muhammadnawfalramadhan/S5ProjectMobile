@@ -1,149 +1,225 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/siksp_bg"
-    android:orientation="vertical">
+    android:background="@drawable/bg_home"
+    android:fillViewport="true">
 
-    <com.google.android.material.appbar.MaterialToolbar
-        android:id="@+id/toolbar"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="@color/siksp_bg"
-        app:titleTextAppearance="@style/ToolbarTitle"
-        app:titleTextColor="@color/siksp_teks" />
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:fillViewport="true">
-
+        <!-- HEADER: background drawable gradasi biru-indigo -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
+            android:background="@drawable/bg_home_header"
             android:orientation="vertical"
-            android:padding="24dp">
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:paddingBottom="24dp">
 
-            <TextView
-                android:id="@+id/txtSapaan"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="20dp"
-                android:fontFamily="@font/jakarta_bold"
-                android:textColor="@color/siksp_hijau_muda"
-                android:textSize="16sp" />
-
-            <ImageView
-                android:layout_width="112dp"
-                android:layout_height="112dp"
-                android:contentDescription="@string/app_name"
-                android:src="@drawable/logo_siksp" />
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@android:color/transparent"
+                app:contentInsetStart="0dp"
+                app:titleTextAppearance="@style/ToolbarTitle"
+                app:titleTextColor="@android:color/white" />
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
                 android:orientation="horizontal">
 
-                <TextView
-                    android:layout_width="wrap_content"
+                <LinearLayout
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/jakarta_bold"
-                    android:text="@string/judul_app_1"
-                    android:textColor="@color/siksp_teks"
-                    android:textSize="32sp" />
+                    android:layout_weight="1"
+                    android:orientation="vertical">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:fontFamily="@font/jakarta_bold"
-                    android:text="@string/judul_app_2"
-                    android:textColor="@color/siksp_hijau_muda"
-                    android:textSize="32sp" />
+                    <TextView
+                        android:id="@+id/txtSapaan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/jakarta_bold"
+                        android:textColor="@android:color/white"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:fontFamily="@font/jakarta_regular"
+                        android:text="@string/deskripsi_app"
+                        android:textColor="@color/putih_70"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="52dp"
+                    android:layout_height="52dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/logo_siksp" />
             </LinearLayout>
 
-            <TextView
-                android:layout_width="wrap_content"
+            <!-- Kartu saldo -->
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="6dp"
-                android:fontFamily="@font/jakarta_bold"
-                android:letterSpacing="0.15"
-                android:text="@string/tagline_app"
-                android:textColor="@color/siksp_teks_abu"
-                android:textSize="12sp" />
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_saldo_card"
+                android:orientation="horizontal"
+                android:padding="16dp">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
-                android:fontFamily="@font/jakarta_regular"
-                android:text="@string/deskripsi_app"
-                android:textColor="@color/siksp_teks_abu"
-                android:textSize="13sp" />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
 
-            <Button
-                android:id="@+id/btnWeb"
-                android:layout_width="match_parent"
-                android:layout_height="56dp"
-                android:layout_marginTop="40dp"
-                android:fontFamily="@font/jakarta_bold"
-                android:text="@string/btn_web"
-                android:textColor="@android:color/white"
-                android:textSize="15sp"
-                app:backgroundTint="@color/siksp_hijau"
-                app:cornerRadius="14dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/jakarta_bold"
+                        android:text="@string/home_saldo_simpanan"
+                        android:textColor="@color/putih_70"
+                        android:textSize="12sp" />
 
-            <Button
-                android:id="@+id/btnMyProject"
-                style="@style/Widget.Material3.Button.OutlinedButton"
-                android:layout_width="match_parent"
-                android:layout_height="56dp"
-                android:layout_marginTop="12dp"
-                android:fontFamily="@font/jakarta_bold"
-                android:text="@string/btn_my_project"
-                android:textColor="@color/siksp_hijau_muda"
-                android:textSize="15sp"
-                app:cornerRadius="14dp"
-                app:strokeColor="@color/siksp_hijau" />
+                    <TextView
+                        android:id="@+id/txtSaldo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="@font/jakarta_bold"
+                        android:textColor="@android:color/white"
+                        android:textSize="20sp" />
+                </LinearLayout>
 
-            <Button
-                android:id="@+id/btnPertemuan3"
-                style="@style/Widget.Material3.Button.OutlinedButton"
-                android:layout_width="match_parent"
-                android:layout_height="56dp"
-                android:layout_marginTop="12dp"
-                android:fontFamily="@font/jakarta_bold"
-                android:text="@string/btn_pertemuan_3"
-                android:textColor="@color/siksp_biru_muda"
-                android:textSize="15sp"
-                app:cornerRadius="14dp"
-                app:strokeColor="@color/siksp_biru" />
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:background="@color/putih_15" />
 
-            <Button
-                android:id="@+id/btnLogout"
-                android:layout_width="match_parent"
-                android:layout_height="56dp"
-                android:layout_marginTop="12dp"
-                android:fontFamily="@font/jakarta_bold"
-                android:text="@string/btn_logout"
-                android:textColor="@android:color/white"
-                android:textSize="15sp"
-                app:backgroundTint="@color/siksp_merah"
-                app:cornerRadius="14dp" />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="32dp"
-                android:fontFamily="@font/jakarta_regular"
-                android:text="@string/identitas"
-                android:textColor="@color/siksp_teks_abu"
-                android:textSize="12sp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/jakarta_bold"
+                        android:text="@string/home_sisa_pinjaman"
+                        android:textColor="@color/putih_70"
+                        android:textSize="12sp" />
 
+                    <TextView
+                        android:id="@+id/txtSisaPinjaman"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="@font/jakarta_bold"
+                        android:textColor="@android:color/white"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </LinearLayout>
         </LinearLayout>
-    </ScrollView>
-</LinearLayout>
+
+        <!-- GRID MENU (RecyclerView + GridLayoutManager) -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/jakarta_bold"
+            android:text="@string/home_menu_layanan"
+            android:textColor="@color/siksp_teks"
+            android:textSize="16sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="12dp"
+            android:nestedScrollingEnabled="false" />
+
+        <!-- AKTIVITAS TERAKHIR (pakai ulang TransaksiAdapter dari Riwayat) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/jakarta_bold"
+                android:text="@string/home_aktivitas"
+                android:textColor="@color/siksp_teks"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/btnLihatSemua"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:fontFamily="@font/jakarta_bold"
+                android:padding="4dp"
+                android:text="@string/home_lihat_semua"
+                android:textColor="@color/siksp_biru_muda"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvAktivitas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="20dp"
+            android:nestedScrollingEnabled="false" />
+
+        <Button
+            android:id="@+id/btnLogout"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/jakarta_bold"
+            android:text="@string/btn_logout"
+            android:textColor="@color/siksp_merah"
+            android:textSize="15sp"
+            app:cornerRadius="14dp"
+            app:icon="@drawable/ic_logout"
+            app:iconGravity="textStart"
+            app:iconTint="@color/siksp_merah"
+            app:strokeColor="@color/siksp_merah" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="24dp"
+            android:fontFamily="@font/jakarta_regular"
+            android:text="@string/identitas"
+            android:textColor="@color/siksp_teks_abu"
+            android:textSize="12sp" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
